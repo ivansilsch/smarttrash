@@ -80,3 +80,8 @@ Task tsk;
 #include "MQTT.h"
 MQTTClient mqtt_client;
 
+
+// Servidor web
+WiFiServer web_server(80);
+#include "Web.h"
+Web web;

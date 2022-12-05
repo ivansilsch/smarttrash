@@ -24,6 +24,7 @@ void setup() {
   // Inicia wifi y mqtt
   mqtt_client.WIFI_init();
   mqtt_client.MQTT_init();
+  web.Web_init();
 
   // Inicia el programa del 2do nucleo
   xTaskCreatePinnedToCore(loop_remote, "loop_remote", 10000, NULL, 1, NULL, 1);
